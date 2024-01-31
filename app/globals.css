@@ -4,26 +4,174 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.homepage-1 {
+  padding-top: 25rem;
+  margin-bottom: 0rem;
+}
+.homepage-2 {
+  padding-bottom: 60rem;
+  background-attachment: scroll;
+  margin-top: 0rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: rgb(159, 18, 17);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(159, 18, 17);
+  color: #fff;
+}
+
+.motor-img {
+  display: flex;
+}
+
+.title-mce {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.find-food {
+  padding-top: 5rem;
+  margin-left: 3rem;
+}
+
+.btn-2 {
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  border-radius: 3rem;
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  margin-right: 0.2rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: rgb(159, 18, 17);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-2:hover {
+  background-color: rgb(159, 18, 17);
+  color: #fff;
+}
+
+.btn-addtocart {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: rgb(159, 18, 17);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-addto:hover {
+  background-color: rgb(159, 18, 17);
+  color: #fff;
+}
+
+.div-btn-2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.flex {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.items {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.food-component {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 3rem;
+}
+
+.food-component:hover {
+  background-color: rgb(159, 18, 17);
+  color: #fff;
+}
+
+.rating-div {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 3rem;
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.rating-page {
+}
+
+.rate-us {
+  margin-top: 300px;
+}
+
+.food-image {
+  height: 10rem;
+  width: 10rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.food-name {
+  text-align: center;
+}
+
+.food-desc {
+  margin: 2rem;
+  font-size: 12px;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.food-price {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.div-btn {
+  margin-top: 50px;
+}
+
+p {
+  padding-top: 1rem;
 }
 
 @layer utilities {

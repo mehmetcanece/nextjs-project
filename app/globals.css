@@ -53,6 +53,7 @@ body {
 }
 
 .find-food {
+  color: rgb(159, 18, 17);
   padding-top: 5rem;
   margin-left: 3rem;
 }
@@ -112,7 +113,7 @@ body {
 
 .food-component {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 3rem;
@@ -151,6 +152,10 @@ body {
 
 .food-name {
   text-align: center;
+}
+
+.thx-msg-2 {
+  margin-top: 20px;
 }
 
 .food-desc {

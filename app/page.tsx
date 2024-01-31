@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <div className="motor-img w-10 h-10">
+      <div className="motor-img w-10 h-10 bg-gradient-to-r from-rose-800 to-grey">
         <Image
           className="hover:right-0 active:rg cursor-pointer"
           src="/homepage.svg"

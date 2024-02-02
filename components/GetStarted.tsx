@@ -32,7 +32,7 @@ const Page = () => {
         variant="h1"
         className="find-food font-serif text-center text-3xl font-light italic"
       >
-        Order Quality Food
+        Enjoy the Quality Food with <br></br> MceFoods
       </Typography>
 
       <div className="overflow-x-auto">

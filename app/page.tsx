@@ -21,17 +21,17 @@ export default function Home() {
       <div className="homepage-1  bg-gradient-to-r from-rose-800 to-grey">
         <div>
           <h1 className=" font-serif text-center text-5xl font-light italic  ">
-            Get The Fast & Safe Delivery
+            Welcome to MceFoods
           </h1>
           <p className=" font-serif text-center text-s text-rose-800 font-extralight ">
             {" "}
-            Order food and get fast and safe delivery in time at the <br></br>{" "}
+            Order food and get fast and delicious foods in time at the <br></br>{" "}
             MceFoods
           </p>
         </div>
         <Link href="/getstarted">
           <div className="div-btn divider">
-            <button className="btn btn-outline btn-wide"> Get Started </button>
+            <button className="btn btn-outline btn-wide"> MENU </button>
           </div>
         </Link>
         <div className="homepage-2 "></div>

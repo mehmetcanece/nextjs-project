@@ -14,6 +14,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: rgb(243, 234, 218);
 }
 
 .homepage-1 {
@@ -152,6 +153,7 @@ body {
 
 .food-name {
   text-align: center;
+  font-size: 15px;
 }
 
 .thx-msg-2 {
@@ -159,7 +161,6 @@ body {
 }
 
 .food-desc {
-  margin: 2rem;
   font-size: 12px;
   font-style: oblique;
   font-weight: lighter;

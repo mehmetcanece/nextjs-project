@@ -8,7 +8,8 @@ import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
 import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
 import Image from "next/image";
-import { Box, CardMedia } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
+import Link from "next/link";
 
 const StyledRating = styled(Rating)(({ theme }) => ({
   "& .MuiRating-iconEmpty .MuiSvgIcon-root": {
@@ -62,22 +63,27 @@ export default function RadioGroupRating() {
       }}
     >
       <div className="">
-        <div className="motor-img w-10 h-10 bg-gradient-to-r from-rose-800 to-grey">
-          <Image
-            className="hover:right-0 active:rg cursor-pointer"
-            src="/homepage.svg"
-            width={40}
-            height={100}
-            alt="homepage image"
-          />
+        <Link href="/">
+          <div className="motor-img w-10 h-10 bg-gradient-to-r from-rose-800 to-grey">
+            <Image
+              className="hover:right-0 active:rg cursor-pointer"
+              src="/homepage.svg"
+              width={40}
+              height={100}
+              alt="homepage image"
+            />
 
-          <h1 className="title-mce italic cursor-pointer  ">MceFoods</h1>
-        </div>
+            <h1 className="title-mce italic cursor-pointer  ">MceFoods</h1>
+          </div>
+        </Link>
 
         <div className="rating-div text-center">
-          <h1 className="rate-us font-serif text-center text-5xl font-light italic  bg-clip-text text-transparent bg-rose-700">
-            Rate Us
-          </h1>
+          <Typography
+            variant="h1"
+            className="rate-us font-serif text-center text-5xl font-light italic  bg-clip-text text-transparent bg-rose-700"
+          >
+            Rate Us!
+          </Typography>
           <StyledRating
             className="rating"
             name="highlight-selected-only"
@@ -87,18 +93,25 @@ export default function RadioGroupRating() {
             getLabelText={(value: number) => customIcons[value].label}
             highlightSelectedOnly
           />
-          <div>
-            <p className="thx-msg font-serif text-center text-xs">
-              Thank you for choosing us.
-            </p>
-          </div>
-          <div>
-            <p className="thx-msg font-serif text-center text-xs">
-              If you have any complaints, please contact us.
-            </p>
-            <a className="thx-msg-2 font-mono text-center text-s">
-              +90 0216 444 19 05
-            </a>
+          <div className="homepage-2">
+            <div>
+              <p className="thx-msg font-serif text-center text-xs">
+                Thank you for choosing us.
+              </p>
+            </div>
+            <div>
+              <p className="thx-msg font-serif text-center text-xs">
+                If you have any complaints, please contact us.
+              </p>
+              <a
+                className="thx-msg-2 font-mono text-center text-s underline cursor-pointer"
+                onClick={() => {
+                  alert("You are going to call MceFoods.");
+                }}
+              >
+                +90 0216 444 19 05
+              </a>
+            </div>
           </div>
         </div>
       </div>

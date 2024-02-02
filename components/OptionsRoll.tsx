@@ -42,6 +42,18 @@ const OptionsRoll: React.FC<OptionsRollProps> = ({ onCategoryClick }) => {
       >
         Fruit
       </button>
+      <button
+        className="btn-2 btn-xl btn-wide text-l font-mono"
+        onClick={() => handleCategoryClick("Dessert")}
+      >
+        Dessert
+      </button>
+      <button
+        className="btn-2 btn-xl btn-wide text-l font-mono"
+        onClick={() => handleCategoryClick("Bevarage")}
+      >
+        Bevarage
+      </button>
     </div>
   );
 };

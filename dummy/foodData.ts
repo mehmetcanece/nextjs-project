@@ -121,6 +121,67 @@ const foodData: Food[] = [
     description: "Assortment of fresh seasonal fruits.",
     image: "zyro-image (3).png",
   },
+
+  {
+    name: "Turkish Baklava",
+    type: "Dessert",
+    order: 1,
+    price: 8.99,
+    description:
+      "Traditional Turkish pastry made of layers of filo dough filled with nuts and sweetened with honey or syrup.",
+    image: "zyro-image (9).png",
+  },
+  {
+    name: "Suffle",
+    type: "Dessert",
+    order: 2,
+    price: 7.99,
+    description:
+      "Decadent chocolate suffle served with a scoop of vanilla ice cream.",
+    image: "zyro-image (11).png",
+  },
+  {
+    name: "Ice Cream",
+    type: "Dessert",
+    order: 3,
+    price: 4.99,
+    description: "Creamy and delicious ice cream available in various flavors.",
+    image: "zyro-image (8).png",
+  },
+  {
+    name: "Coca Cola",
+    type: "Bevarage",
+    order: 4,
+    price: 2.49,
+    description: "Classic Coca Cola, the original refreshing soda.",
+    image: "zyro-image (7).png",
+  },
+
+  {
+    name: "Coca Cola Zero",
+    type: "Bevarage",
+    order: 5,
+    price: 2.49,
+    description:
+      "Coca Cola Zero, the zero-sugar, zero-calorie version of Coca Cola.",
+    image: "zyro-image (6).png",
+  },
+  {
+    name: "Ice Tea",
+    type: "Bevarage",
+    order: 6,
+    price: 3.49,
+    description: "Refreshing iced tea brewed from fine tea leaves.",
+    image: "zyro-image (10).png",
+  },
+  {
+    name: "Water",
+    type: "Bevarage",
+    order: 7,
+    price: 1.99,
+    description: "Purified water served chilled.",
+    image: "zyro-image (12).png",
+  },
 ];
 
 export default foodData;

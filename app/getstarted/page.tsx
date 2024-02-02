@@ -5,7 +5,7 @@ import FoodCard from "@/components/FoodCard";
 import OptionsRoll from "@/components/OptionsRoll";
 import { Food } from "@/types";
 import foodData from "@/dummy/foodData";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { useMemo } from "react";
 import Link from "next/link";
 
@@ -28,9 +28,13 @@ const Page = () => {
 
   return (
     <div>
-      <h1 className="find-food font-serif text-center text-3xl font-light italic">
+      <Typography
+        variant="h1"
+        className="find-food font-serif text-center text-3xl font-light italic"
+      >
         Order Quality Food
-      </h1>
+      </Typography>
+
       <div className="overflow-x-auto">
         <OptionsRoll onCategoryClick={handleCategoryClick} />
       </div>
@@ -60,18 +64,20 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <div className="div-btn-2 divider">
-        <Link href="/rate-us">
-          <Button
-            color="success"
-            onClick={() => {
-              console.log("Added to Card");
-            }}
-            className="btn-2 btn-xl btn-wide text-l font-mono"
-          >
-            Rate Us!
-          </Button>
-        </Link>
+      <div className="homepage-2">
+        <div className="div-btn-2 divider">
+          <Link href="/rate-us">
+            <Button
+              color="error"
+              onClick={() => {
+                console.log("Added to Card");
+              }}
+              className="btn-2 btn-xl btn-wide text-l font-mono"
+            >
+              Rate Us!
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -45,28 +45,32 @@ const Page = () => {
               key={food.name}
               className="food-component flex-col items-center cursor-pointer h-80 w-60 bg-slate-100 hover: shadow-2xl hover:shadow-black"
             >
-              <div className="text-center">
-                <div>
-                  <img
-                    className="food-image"
-                    src={food.image}
-                    alt={food.name}
-                  />
-                </div>
-
+              <Link href={`/pages/product/${food.id}`} passHref>
                 <div className="text-center">
-                  <p className="food-name">{food.name}</p>
-                  <a className="food-desc text-center  ">{food.description}</a>
-                  <h1 className="food-price">${food.price}</h1>
+                  <div>
+                    <img
+                      className="food-image"
+                      src={food.image}
+                      alt={food.name}
+                    />
+                  </div>
+
+                  <div className="text-center">
+                    <p className="food-name">{food.name}</p>
+                    <a className="food-desc text-center  ">
+                      {food.description}
+                    </a>
+                    <h1 className="food-price">${food.price}</h1>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
       </div>
       <div className="homepage-2">
         <div className="div-btn-2 divider">
-          <Link href="/rate-us">
+          <Link href="/pages/rate-us">
             <Button
               color="error"
               onClick={() => {

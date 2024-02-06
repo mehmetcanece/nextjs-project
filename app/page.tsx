@@ -29,7 +29,7 @@ export default function Home() {
             MceFoods
           </p>
         </div>
-        <Link href="/getstarted">
+        <Link href="/pages/getstarted">
           <div className="div-btn divider">
             <button className="btn btn-outline btn-wide"> MENU </button>
           </div>

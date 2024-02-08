@@ -1,6 +1,6 @@
 import * as React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "@mui/material/Link";
+import Link from "next/link";
 
 function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
   event.preventDefault();
@@ -11,10 +11,10 @@ export default function BasicBreadcrumbs() {
   return (
     <div role="presentation" onClick={handleClick}>
       <Breadcrumbs aria-label="breadcrumb">
-        <Link href="http://localhost:3000" underline="hover" color="inherit">
+        <Link href="/" color="inherit">
           Homepage
         </Link>
-        <Link underline="hover" color="black" href="/pages/getstarted">
+        <Link color="black" href="/pages/getstarted">
           Menu
         </Link>
       </Breadcrumbs>

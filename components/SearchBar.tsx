@@ -3,23 +3,19 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
 import foodData from "@/dummy/foodData";
-import { useState } from "react";
 
-export default function SearchBar() {
-  const [search, setSearch] = useState("");
+interface SearchBarProps {
+  onOptionSelected: (foodId: string) => void;
+}
 
-  const handleSearch = (value: string) => {
-    setSearch(value);
-  };
-
-  const handleKeyPress = (event: any) => {
-    if (event.key === "Enter") {
-      console.log(search);
-    }
-  };
+export default function SearchBar({ onOptionSelected }: SearchBarProps) {
+  const [search, setSearch] = React.useState<string>("");
 
   const handleOptionSelected = (value: string) => {
-    console.log(value);
+    const selectedFood: any = foodData.find((food) => food.name === value);
+    if (selectedFood) {
+      onOptionSelected(selectedFood.id);
+    }
   };
 
   return (
@@ -30,8 +26,7 @@ export default function SearchBar() {
         id="free-solo-2-demo"
         disableClearable
         options={foodData.map((option) => option.name)}
-        onInputChange={(event, value) => handleSearch(value)}
-        onKeyPress={handleKeyPress}
+        onInputChange={(event, value) => setSearch(value)}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -43,6 +38,7 @@ export default function SearchBar() {
           />
         )}
         onChange={(event, value) => handleOptionSelected(value)}
+        value={search}
       />
     </Stack>
   );

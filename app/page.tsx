@@ -36,7 +36,9 @@ export default function Home() {
         </Link>
         <Link href="/pages/search-item">
           <div className="div-btn divider">
-            <button className="btn btn-outline btn-wide">SEARCH AN ITEM</button>
+            <button className="btn btn-outline btn-wide">
+              SEARCH FOR AN ITEM
+            </button>
           </div>
         </Link>
         <div className="homepage-2 "></div>

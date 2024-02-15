@@ -1,14 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import FoodCard from "@/components/FoodCard";
 import OptionsRoll from "@/components/OptionsRoll";
 import { Food } from "@/types";
 import foodData from "@/dummy/foodData";
 import { Button, Typography } from "@mui/material";
 import { useMemo } from "react";
 import Link from "next/link";
-import SearchBar from "./SearchBar";
 
 const Page = () => {
   const [selectedType, setSelectedType] = useState<string | null>(null);

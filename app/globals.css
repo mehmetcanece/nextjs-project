@@ -12,6 +12,13 @@
   }
 }
 
+.search-bar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
 }
@@ -109,6 +116,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.search-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .food-component {

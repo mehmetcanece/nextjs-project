@@ -34,6 +34,11 @@ export default function Home() {
             <button className="btn btn-outline btn-wide"> MENU </button>
           </div>
         </Link>
+        <Link href="/pages/search-item">
+          <div className="div-btn divider">
+            <button className="btn btn-outline btn-wide">SEARCH AN ITEM</button>
+          </div>
+        </Link>
         <div className="homepage-2 "></div>
       </div>
     </main>
